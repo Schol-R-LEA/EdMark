@@ -1,5 +1,5 @@
 # EdMark Reference Suite 
-'''EdMark''' is a suite of tests for comparing the performance, costs, and benefits for the editing models used
+***EdMark*** is a suite of tests for comparing the performance, costs, and benefits for the editing models used
 by various editing tools, especially text editors. This reference suite is intended to provide a set of tests 
 for directly testing the methods by which an editor manipulates the material it operates on; it is not meant to 
 serve as a comparison between complete, operational text editors or word processors. The goal is to demonstrate
