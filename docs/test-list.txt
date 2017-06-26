@@ -1,0 +1,55 @@
+# Tests 
+
+Unless noted otherwise, test measure usage of time, space, or both.
+
+## Initialization
+
+* without any open file 
+* with an empty file
+* with a small (5KiB) file containing datasets as described under [Test Data Sets](#test-data-sets)
+* with a 1 MiB file
+*
+
+## Test Data Sets
+There should be a suite of test files, some pre-existing and some generated at test time,
+containing data with the following characteristics:
+* zero bytes
+* a single NUL byte
+* Files of sizes 1KiB 15Kib, 16Kib, 1023 Kib, 1 MiB, 100 MiB, containing: 
+** the encoding's line feed character, if any
+** the encoding's line carriage return character, if any
+** a series of CR/LF pairs, if the encoding has both
+** a series of alternating spaces and newlines
+** a series of spaces with no newlines
+** a single repeated non-whitespace character in the 7-bit ASCII range, selected randomly at test time
+** a single repeated non-whitespace character in the chosen encoding range, selected randomly at test time
+** the first 79 bytes of the commonly used 'Lorem Ipsum' dataset
+** the first 80 bytes of the commonly used 'Lorem Ipsum' dataset
+** the first 255 bytes of the commonly used 'Lorem Ipsum' dataset
+** the first 256 bytes of the commonly used 'Lorem Ipsum' dataset
+** For encodings that permit, files containing
+*** the first 1000 words
+*** the last 1000 words
+*** the complete text
+*** a random selection of between 2000 and 15000 words
+from each of
+*** *Hamlet* in English
+*** *The Wealth of Nations* in English
+*** *Alice's Adventures in Wonderland* in English
+*** *The King James Bible, Revised* in English
+*** *The Little Prince*, in French, German, English, Dutch, and Spanish
+*** *Le Morte d'Arthur* in Old French and Modern English translation
+*** *The Canterbury Tales*, in Middle English and Modern English translation
+*** *El Cid*, in Spanish
+*** *La Divina Commedia*, in Italian
+*** *The Republic* in Classic (Attic) Greek
+*** The Christian New Testament in Aramaic, Koine Greek, and Coptic
+*** *Commentary on the Gallic Wars* in Classical Latin
+*** The Vulgate Bible in Late Latin
+*** *War and Peace*, in Russian
+*** *The Romance of the Three Kingdoms*, in Chinese (Traditional, Simplified and Pinyin orthographies)
+*** *The Great Mirror*, in Japanese 
+*** The *Torah* in Hebrew
+*** The *Quran*, in standard Arabic
+*** The *Bhagavad Gita*, in Sanskrit
+*** The *Popul Vuh*, in Qiche and Spanish
